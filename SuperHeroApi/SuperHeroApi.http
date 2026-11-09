@@ -1,6 +1,38 @@
-@SuperHeroApi_HostAddress = http://localhost:5155
+### Get all
+GET https://localhost:7190/api/SuperHero
 
-GET {{SuperHeroApi_HostAddress}}/weatherforecast/
-Accept: application/json
+### Get single
+GET https://localhost:7190/api/SuperHero/1
 
-###
+
+### Skapa en ny
+POST https://localhost:7190/api/SuperHero
+Content-Type: application/json
+
+{
+    "name": "Thor",
+    "firstName": "Thor",
+    "surName": "Odinson",
+    "city": "Asgard"  
+}
+
+
+### Update 
+PUT https://localhost:7190/api/SuperHero/1
+Content-Type: application/json
+
+{
+    "name": "Thor2",
+    "firstName": "Thor",
+    "surName": "Odinson",
+    "city": "Bla"  
+}
+
+### Delete
+DELETE https://localhost:7190/api/SuperHero/2
+
+
+
+
+
+
